@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Cursor
+Comment=Cursor built to make you extraordinarily productive, agents turn ideas into code
+Exec=/usr/local/bin/cursor %F
+Terminal=false
+Type=Application
+Icon=cursor
+Categories=Development;IDE;
+MimeType=text/plain;
