@@ -1,0 +1,8 @@
+[Unit]
+Description=Refresh Arch mirrorlist with Reflector
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/reflector --country SG --protocol https --latest 10 connection-timeout 20 download-timeout 20 --sort rate --save /etc/pacman.d/mirrorlist
