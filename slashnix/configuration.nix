@@ -100,7 +100,11 @@
     pkgs.fastfetch
     pkgs.btop
 
+    # TUI Application
+    pkgs.opencode
+
     # GUI Application
+    pkgs.nemo
     pkgs.ghostty
     pkgs.vscode
 
