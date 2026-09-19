@@ -94,7 +94,7 @@
     pkgs.curl
     pkgs.wget
     pkgs.vim
-    pkgs.neovim
+    pkgs.tmux
     pkgs.fzf
     pkgs.starship
     pkgs.fastfetch
@@ -104,9 +104,8 @@
     pkgs.opencode
 
     # GUI Application
-    pkgs.nemo
     pkgs.ghostty
-    pkgs.vscode
+    pkgs.vscode-fhs
 
     # Software Dev Utility
     pkgs.nodejs
