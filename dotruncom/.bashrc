@@ -9,12 +9,21 @@ alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 PS1="[\u@\h \W]\$ "
 
+# Enable timestamp format for history command
+# Format: YYYY-MM-DD HH:MM:SS
+export HISTTIMEFORMAT="%F %T "
+
 # Power Option Aliases
 alias poff="poweroff"
 alias rbt="sudo reboot"
 alias sus="systemctl suspend"
 alias gnout="gnome-session-quit --logout" # Log out from GNOME DE
 alias lxout="lxqt-leave --logout" # Log out from LXQt DE
+
+# archlinux-java Aliases
+alias javastatus="archlinux-java status"
+alias javaset="archlinux-java set $2"
+alias javaget="archlinux-java get"
 
 # Bluetooth and Network Aliases
 alias bton="rfkill list unblock bluetooth | bluetoothctl power on"
@@ -38,9 +47,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Neovim
 export PATH="$HOME/neovim/bin:$PATH"
-
-# Zed
-export PATH="$HOME/.local/bin:$PATH"
 
 # Exercism
 export PATH="$HOME/bin:$PATH"
