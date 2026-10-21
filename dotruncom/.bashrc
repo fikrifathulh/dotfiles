@@ -22,7 +22,7 @@ alias lxout="lxqt-leave --logout" # Log out from LXQt DE
 
 # archlinux-java Aliases
 alias javastatus="archlinux-java status"
-alias javaset="archlinux-java set $2"
+alias javaset="sudo archlinux-java set $2"
 alias javaget="archlinux-java get"
 
 # Bluetooth and Network Aliases
@@ -56,3 +56,11 @@ eval "$(starship init bash)"
 
 # fzf
 eval "$(fzf --bash)" # Set up fzf key bindings and fuzzy completion
+
+# pnpm
+export PNPM_HOME="/home/2fharch/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
