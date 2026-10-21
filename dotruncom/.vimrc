@@ -57,6 +57,7 @@ Plug 'https://github.com/swiftlang/sourcekit-lsp.git' " Swiftlang Sourcekit LSP
 Plug 'https://github.com/python-lsp/python-lsp-server.git' " Python LSP
 Plug 'https://github.com/eclipse-jdtls/eclipse.jdt.ls.git'
 Plug 'https://github.com/rust-lang/rust-analyzer.git'
+Plug 'https://github.com/rust-lang/rust.vim.git'
 Plug 'https://github.com/junegunn/fzf.vim.git' " fzf
 
 call plug#end()
