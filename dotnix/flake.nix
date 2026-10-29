@@ -1,5 +1,5 @@
 {
-  description = "Personal Tools";
+  description = "Personal CLI Tools";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -27,8 +27,9 @@
       devShells.${system}.default = pkgs.mkShell {
         packages = with pkgs; [
           neovim
+          powershell
           gleam
-          erlang
+          beamPackages.erlang
           rebar3
         ];
       };

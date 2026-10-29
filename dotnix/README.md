@@ -22,6 +22,7 @@ Personal CLI packages, installed through a Nix profile.
     nix profile list                 # what is installed
     nix profile remove <name>        # uninstall an entry
     nix search nixpkgs <name>        # find a package name
+    nix develop                      # enter dev shell
     nix store gc                     # free disk space
 
 ## Neovim commands
